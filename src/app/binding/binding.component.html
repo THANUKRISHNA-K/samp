@@ -1,0 +1,28 @@
+<h2>Types of Binding</h2>
+<hr style=" background-color: red;">
+<div class="dashboard">
+<div class="box"><div><table >
+    <!-- 1.String Interpolation -->
+    <tr><th colspan="2">String Interpolation</th></tr>
+    <tr><td>NAME</td>
+        <td>{{name}}</td></tr>
+    <tr><td>ROLLNO</td>
+        <td>{{rollno}}</td></tr>
+    <tr> <td>DEPT</td>
+        <td>{{dept}}</td></tr>
+</table></div></div>
+<!-- 2.property Binding  -->
+<div class="box"> <br> <h1>Status:{{status}}</h1>
+     <h2> Property and Event Binding</h2> 
+     <button class="btn btn-success" [disabled]="hide"  (click)="statusc()"> change Status</button>
+<!-- 3.Event Binding  -->
+   <br> <button class="btn btn-danger" (click)="press()">Enable/Disable status</button>
+    </div>
+    <!-- 4. Two-way binding -->
+<div class="box"> <br><h2>Two-way Binding</h2> <br> type something <br> <br><input type="text" [(ngModel)]="content"> <br> {{content}}</div>
+<div class="box">
+    <!-- 5.Input&Output -->
+    <app-inputoutput [msgtwo]="formsg" (parentemit)="pressmsg($event)"></app-inputoutput>
+</div>
+</div>
+
